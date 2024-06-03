@@ -1,7 +1,7 @@
 # How to install TinyMCE selfhosted in laravel
-1. Install tinymce visit [this link](https://www.tiny.cloud/docs/tinymce/latest/npm-projects/)  or just type: ```npm install tinymce```
+>1. Install tinymce visit [this link](https://www.tiny.cloud/docs/tinymce/latest/npm-projects/)  or just type: ```npm install tinymce```
 
-2. Import TinyMCE Files
+>2. Import TinyMCE Files
 _In the ```resources/js/app.js``` file, add the following lines at the top to import the required JS and CSS files for TinyMCE: ```resources/js/app.js```_
 
 ```
@@ -15,7 +15,7 @@ import 'tinymce/themes/silver/theme';
 import 'tinymce/models/dom/model';
 ```
 
-3. Add TinyMCE Init Code
+>3. Add TinyMCE Init Code
 _Now add the following init code to the bottom of your ```app.js```_
 
 ```
@@ -31,12 +31,14 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 ```
 
-4. Build Your Assets Using Vite
+>4. Build Your Assets Using Vite
 _Build the assets of your Laravel application using Vite by running the following command in your terminal:_
 
-```npm run build```
+```
+npm run build
+```
 
-5. Add TinyMCE to Blade by Using the @vite Directive
+>5. Add TinyMCE to Blade by Using the @vite Directive
 _Now, in your Blade file, add the following line to use Vite for including the ```app.js``` file that was built using npm: ```@vite(['resources/js/app.js'])```._
 
 ***Xample:***
