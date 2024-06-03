@@ -1,4 +1,4 @@
-# HOW TO COPY FILE TO ONOTHER FOLDER DIRECTORY:
+## HOW TO COPY FILE TO ONOTHER FOLDER DIRECTORY:
 
 ***CODE DEFAULT :*** ``` sudo cp /path/to/file /path/to/destination ```
 ***XAMPLE CODE :*** ``` sudo cp /opt/lampp/lampp /etc/init.d ```
@@ -8,7 +8,6 @@
 ====================================================
 1. Create a new file in **(/etc/init.d.) :** ``` sudo nano /etc/init.d/xampp ```
 2. Paste this code:
-
 
 ```
 #!/bin/sh
@@ -40,8 +39,7 @@ esac
 exit 0
 ```
 
-
-## After that, click CTRL-0 and hit Enter to save, and the last click CTRL+X to exit.
+After that, click CTRL-0 and hit Enter to save, and the last click CTRL+X to exit.
 
 3. After that Change its permissions to make it executable with this command: ``` sudo chmod 755 /etc/init.d/xampp ```
 4. Enable the script: Now, we need to tell the system to run this script at startup: ``` sudo update-rc.d xampp defaults ```
