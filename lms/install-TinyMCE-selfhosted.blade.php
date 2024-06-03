@@ -98,3 +98,5 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 </script>
+
+<!-- Basic setup for TinyMCE: https://www.tiny.cloud/docs/tinymce/latest/basic-setup/-->
