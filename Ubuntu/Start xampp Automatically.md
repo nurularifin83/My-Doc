@@ -1,9 +1,3 @@
-### HOW TO COPY FILE TO ONOTHER FOLDER DIRECTORY:
-
-***CODE DEFAULT :*** ``` sudo cp /path/to/file /path/to/destination ```
-***XAMPLE CODE :*** ``` sudo cp /opt/lampp/lampp /etc/init.d ```
-
-
 ## Want to start Xampp service on startup (AUTO START):
 ====================================================
 1. Create a new file in **(/etc/init.d.) :** ``` sudo nano /etc/init.d/xampp ```
