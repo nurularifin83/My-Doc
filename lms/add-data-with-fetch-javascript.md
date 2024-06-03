@@ -1,11 +1,13 @@
-<!-- ROUTE -->
-@php
+# Add data post with _Fetch_ Javascript.
+
+> Your Route
+```
 Route::controller(CourseController::class)->group(function(){
     Route::post('/save-lecture/','SaveLecture')->name('save-lecture');
 });    
-@endphp
-
-<!--FORM-->
+```
+> Your HTML Code
+```
 <div class="container">
     <h6>Lecture Title </h6>
     <input type="text" class="form-control" placeholder="Enter Lecture Title">
@@ -16,9 +18,10 @@ Route::controller(CourseController::class)->group(function(){
     <button class="btn btn-primary mt-3" onclick="saveLecture('${courseId}',${sectionId},'${containerId}')" >Save Lecture</button>
     <button class="btn btn-secondary mt-3" onclick="hideLectureContainer('${containerId}')">Cancel</button>
 </div>
-<!--FORM-->
+```
 
-<!-- JAVASCRIPT-->
+> Your Fetch javascript code
+```
 <script>
     const saveLecture = (courseId, sectionId, containerId) => {
         const lectureContainer = document.getElementById(containerId);
@@ -83,19 +86,21 @@ Route::controller(CourseController::class)->group(function(){
         });
     }
 </script>
+```
 
-<!-- FUNCTION -->
-@php
-    public function SaveLecture(Request $request)
-    {
-        $lecture = new CourseLecture();
-        $lecture->course_id = $request->course_id;
-        $lecture->section_id = $request->section_id;
-        $lecture->lecture_title = $request->lecture_title;
-        $lecture->url = $request->lecture_url;
-        $lecture->content = $request->content;
-        $lecture->save();
+> Your controller method
 
-        return response()->json(['success' => 'Saved.']);
-    }
-@endphp
+```
+public function SaveLecture(Request $request)
+{
+    $lecture = new CourseLecture();
+    $lecture->course_id = $request->course_id;
+    $lecture->section_id = $request->section_id;
+    $lecture->lecture_title = $request->lecture_title;
+    $lecture->url = $request->lecture_url;
+    $lecture->content = $request->content;
+    $lecture->save();
+
+    return response()->json(['success' => 'Saved.']);
+}
+```

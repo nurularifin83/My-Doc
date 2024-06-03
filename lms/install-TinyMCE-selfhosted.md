@@ -1,21 +1,23 @@
-<!--1. Install tinymce visit this link: https://www.tiny.cloud/docs/tinymce/latest/npm-projects/  or just type: npm install tinymce-->
-<!--2. Import TinyMCE Files
-    In the resources/js/app.js file, add the following lines at the top to import the required JS and CSS files for TinyMCE: resources/js/app.js
+> 1. Install tinymce visit [this link](https://www.tiny.cloud/docs/tinymce/latest/npm-projects/)  or just type: ```npm install tinymce```
 
-    import './bootstrap';
-    import 'tinymce/tinymce';
-    import 'tinymce/skins/ui/oxide/skin.min.css';
-    import 'tinymce/skins/content/default/content.min.css';
-    import 'tinymce/skins/content/default/content.css';
-    import 'tinymce/icons/default/icons';
-    import 'tinymce/themes/silver/theme';
-    import 'tinymce/models/dom/model';
+> 2. Import TinyMCE Files
+_In the ```resources/js/app.js``` file, add the following lines at the top to import the required JS and CSS files for TinyMCE: ```resources/js/app.js```_
 
--->
+```
+import './bootstrap';
+import 'tinymce/tinymce';
+import 'tinymce/skins/ui/oxide/skin.min.css';
+import 'tinymce/skins/content/default/content.min.css';
+import 'tinymce/skins/content/default/content.css';
+import 'tinymce/icons/default/icons';
+import 'tinymce/themes/silver/theme';
+import 'tinymce/models/dom/model';
+```
 
-<!--3. Add TinyMCE Init Code
-Now add the following init code to the bottom of your app.js
+> 3. Add TinyMCE Init Code
+_Now add the following init code to the bottom of your ```app.js```_
 
+```
 // .. After imports init TinyMCE ..
 window.addEventListener('DOMContentLoaded', () => {
     tinymce.init({
@@ -26,21 +28,19 @@ window.addEventListener('DOMContentLoaded', () => {
         content_css: false
     });
 });
+```
 
--->
+> 4. Build Your Assets Using Vite
+_Build the assets of your Laravel application using Vite by running the following command in your terminal:_
 
-<!--4. Build Your Assets Using Vite
-Build the assets of your Laravel application using Vite by running the following command in your terminal:
+```npm run build```
 
-npm run build
+> 5. Add TinyMCE to Blade by Using the @vite Directive
+_Now, in your Blade file, add the following line to use Vite for including the ```app.js``` file that was built using npm: ```@vite(['resources/js/app.js'])```._
 
--->
+***Xample:***
 
-<!--5. Add TinyMCE to Blade by Using the @vite Directive
-Now, in your Blade file, add the following line to use Vite for including the app.js file that was built using npm: @vite(['resources/js/app.js']).
-
-Xample: -->
-
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,8 +60,11 @@ Xample: -->
     </form>
 </body>
 </html>
+```
 
-<!-- Code in app.js after completed -->
+> [!NOTE]
+> Code in app.js after completed
+```
 <script>
     
 import './bootstrap';
@@ -98,5 +101,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 </script>
+```
 
-<!-- Basic setup for TinyMCE: https://www.tiny.cloud/docs/tinymce/latest/basic-setup/-->
+Basic setup for [TinyMCE:](https://www.tiny.cloud/docs/tinymce/latest/basic-setup/)
