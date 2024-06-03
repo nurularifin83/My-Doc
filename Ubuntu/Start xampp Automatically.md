@@ -10,9 +10,8 @@
 2. Paste this code:
 
 
-
-#!/bin/sh
 ```
+#!/bin/sh
 ### BEGIN INIT INFO
 # Provides:          xampp
 # Required-Start:    $remote_fs $syslog
@@ -42,7 +41,7 @@ exit 0
 ```
 
 
-## After that click: CTRL-0 and hit Enter to save, and the last click CTRL+X to exit.
+## After that, click CTRL-0 and hit Enter to save, and the last click CTRL+X to exit.
 
 3. After that Change its permissions to make it executable with this command: ``` sudo chmod 755 /etc/init.d/xampp ```
 4. Enable the script: Now, we need to tell the system to run this script at startup: ``` sudo update-rc.d xampp defaults ```
