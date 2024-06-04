@@ -1,4 +1,4 @@
-# We recommend every repository include a README, LICENSE, and .gitignore.
+## We recommend every repository include a _README_, _LICENSE_, and _.gitignore_.
 
 ## …or create a new repository on the command line
 ```
