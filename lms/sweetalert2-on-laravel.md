@@ -1,5 +1,5 @@
 # How to use [sweetalert2](https://sweetalert2.github.io/#download) on Laravel as old-school alternative
-> 1. Installation. Put this code on your header ```<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>```.
+> 1. Installation. Put this code on your footer ```<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>```.
 > 2. Create file ```script.js`` and linked to your blade via footer. 
 > 3. Put this code in your ```script.js```:
 
