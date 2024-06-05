@@ -1,3 +1,5 @@
+> [!IMPORTANT]
+> For Basic writing and formatting syntax
 ## We recommend every repository include a _README_, _LICENSE_, and _.gitignore_.
 
 ## …or create a new repository on the command line
