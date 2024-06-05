@@ -1,6 +1,7 @@
 # How to use [sweetalert2](https://sweetalert2.github.io/#download) on Laravel as old-school alternative
 > 1. Installation. Put this code on your header ```<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>```.
-> 2. Put this code in your ```script.js```:
+> 2. Create file ```script.js`` and linked to your blade via footer. 
+> 3. Put this code in your ```script.js```:
 
 ```
 // Confirm delete message
@@ -37,8 +38,8 @@ $(function(){
 });
 ```
 
-> 3. In blade on _delete button_ put the following code ```id="delete"```. Look like this: ```<a href="{{ route('delete.course',$item->id) }}" class="btn btn-danger" id="delete"></a>```
-> 4. Done. You're good to go. For more [visit this link](https://sweetalert2.github.io/#usage)
+> 4. In blade on _delete button_ put the following code ```id="delete"```. Look like this: ```<a href="{{ route('delete.course',$item->id) }}" id="delete">Delete</a>```
+> 5. Done. You're good to go. For more [visit this link](https://sweetalert2.github.io/#usage)
 
 # How to use [sweetalert2](https://sweetalert2.github.io/#download) on Laravel use NPM
 1. Installation. Run this code ```npm install sweetalert2```
@@ -82,8 +83,25 @@ $(function(){
 });
 ```
 
-3. Add this code ```'resources/js/script.js'``` on your ```vite.config.js```.
+3. Add this code ```'resources/js/script.js'``` on your ```vite.config.js```. Final code after adding ```'resources/js/script.js'```:
+```
+import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
+
+export default defineConfig({
+    plugins: [
+        laravel({
+            input: [
+                'resources/css/app.css',
+                'resources/js/app.js',
+                'resources/js/script.js',
+            ],
+            refresh: true,
+        }),
+    ],
+});
+```
 4. Run this code ```npm run build```.
 5. Add this code ```@vite(['resources/js/script.js'])``` on your footer.
-6. The last one is to add ```id="delete"``` on your blade delete button. Button after adding _ID_ ```<a href="{{ route('delete.course',$item->id) }}" class="btn btn-danger" id="delete"></a>```.
+6. The last one is to add ```id="delete"``` on your blade delete button. Button after adding _ID_ ```<a href="{{ route('delete.course',$item->id) }}" id="delete">Delete</a>```.
 7. Done. You're good to go. For more [visit this link](https://sweetalert2.github.io/#usage)
