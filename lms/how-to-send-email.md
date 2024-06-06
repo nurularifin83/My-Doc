@@ -70,5 +70,6 @@ $data = [
     'email' => $sendmail->email,
 ];
 Mail::to($request->email)->send(new OrderConfirm($data));
-```. However, ```Payment``` is your model, and ```OrderConfirm``` is your mail file in the step _1 and 2_. Maybe in your case the file name can be different with me.
+```
+However, ```Payment``` is your model, and ```OrderConfirm``` is your mail file in the step _1 and 2_. Maybe in your case the file name can be different with me.
 > 6. Done. You're good to go.
