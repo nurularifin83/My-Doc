@@ -60,5 +60,15 @@ class OrderConfirm extends Mailable
 ```
 > 3. Create folder ```mail``` in _view_, then in that folder create a blade file ```yourfilename.blade.php```. In this case i named this file as ```order_mail.blade.php```.
 > 4. Design your invoice order template _(```order_mail.blade.php```)_ as you want.
-> 5. In your methode controller put this code ```Mail::to($request->email)->send(new OrderConfirm($data)); ```. However, ```OrderConfirm``` is your model, maybe in your case the model is different with me.
+> 5. In your methode controller put this code:
+```
+$sendmail = Payment::find($paymentId);
+$data = [
+    'invoice_no' => $sendmail->invoice_no,
+    'amount' => $total_amount,
+    'name' => $sendmail->name,
+    'email' => $sendmail->email,
+];
+Mail::to($request->email)->send(new OrderConfirm($data));
+```. However, ```Payment``` is your model, and ```OrderConfirm``` is your mail file in the step _1 and 2_. Maybe in your case the file name can be different with me.
 > 6. Done. You're good to go.
