@@ -41,7 +41,7 @@ $(function(){
 > 4. In blade on _delete button_ put the following code ```id="delete"```. Look like this: ```<a href="{{ route('delete.course',$item->id) }}" id="delete">Delete</a>```
 > 5. Done. You're good to go. For more [visit this link](https://sweetalert2.github.io/#usage)
 
-# How to use [sweetalert2](https://sweetalert2.github.io/#download) on Laravel use NPM
+# How to use [sweetalert2](https://sweetalert2.github.io/#download) on Laravel with NPM
 1. Installation. Run this code ```npm install sweetalert2```
 2. Create a file named ```script.js``` in folder _resources/js/_. And then put this code:
 
