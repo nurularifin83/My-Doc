@@ -126,7 +126,7 @@ public function SmtpUpdate(Request $request){
     </div>
 </div>
 ```
-> 8. Go to ```app/Models/AppServiceProvider.php``` and add this code:
+> 8. Go to ```app/Providers/AppServiceProvider.php``` and add this code:
 ```
 <?php
 
