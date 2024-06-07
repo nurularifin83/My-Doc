@@ -126,4 +126,64 @@ public function SmtpUpdate(Request $request){
     </div>
 </div>
 ```
-> 8. Done. You're good to go.
+> 8. Go to ```app/Models/AppServiceProvider.php``` and add this code:
+```
+<?php
+
+namespace App\Providers;
+
+use App\Models\SmtpSetting;
+use Illuminate\Support\ServiceProvider;
+use Config;
+
+class AppServiceProvider extends ServiceProvider
+{
+    /**
+     * Register any application services.
+     */
+    public function register(): void
+    {
+        //
+    }
+
+    /**
+     * Bootstrap any application services.
+     */
+    public function boot(): void
+    {
+        if (\Schema::hasTable('smtp_settings')) {
+            $smtpsetting = SmtpSetting::first();
+ 
+            if ($smtpsetting) {
+            $data = [
+             'driver' => $smtpsetting->mailer, 
+             'host' => $smtpsetting->host,
+             'port' => $smtpsetting->port,
+             'username' => $smtpsetting->username,
+             'password' => $smtpsetting->password,
+             'encryption' => $smtpsetting->encryption,
+             'from' => [
+                 'address' => $smtpsetting->from_address,
+                 'name' => config('app.name')
+             ]
+              
+             ];
+             Config::set('mail',$data);
+            }
+        }
+    }
+}
+```
+> 9. In ```.env``` file change those code to this one:
+```
+MAIL_MAILER=
+MAIL_HOST=
+MAIL_PORT=
+MAIL_USERNAME=
+MAIL_PASSWORD=
+MAIL_ENCRYPTION=
+MAIL_FROM_ADDRESS=
+MAIL_FROM_NAME="${APP_NAME}"
+```
+You don't need to fill those part tho.
+> 10. Done. You're good to go.
