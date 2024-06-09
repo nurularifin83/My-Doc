@@ -36,7 +36,7 @@
     
         $('#myForm').validate({
             rules: {
-                subject: { _//Your textfield name_  
+                subject: { //Your textfield name  
                     required : true,
                 }
             },
@@ -98,7 +98,7 @@
     
         $('#myForm').validate({
             rules: {
-                subject: { _//Your textfield name_  
+                subject: { //Your textfield name  
                     required : true,
                 }
             },
