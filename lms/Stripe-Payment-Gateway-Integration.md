@@ -224,7 +224,7 @@ public function StripeOrder(Request $request)
                 'user_id' => Auth::user()->id,
                 'course_id' => $cart->id,
                 'instructor_id' => $cart->options->instructor,
-                'course_title' => $cart->options->name,
+                'course_title' => $cart->name,
                 'price' => $cart->price,
                 'created_at' => Carbon::now()
             ]);
