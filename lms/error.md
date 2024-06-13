@@ -1,4 +1,4 @@
-# Error: Top-level await is not available in the configured target environment ("chrome87", "edge88", "es2020", "firefox78", "safari14" + 2 overrides)
+# Error: _Top-level await is not available in the configured target environment ("chrome87", "edge88", "es2020", "firefox78", "safari14" + 2 overrides)_
 ## How to fixed:
 > 1. Add this code in ```vite.config.js```
 ```
