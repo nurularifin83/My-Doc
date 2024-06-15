@@ -59,7 +59,7 @@ function categoryEdit(id){
 }
 </script>
 ```
-> 5. Call your ```ajax function``` and put on Edit button like the following code:
+> 5. Call your ajax function```categoryEdit(id)``` and put on Edit button like the following code:
 ```
 @foreach ($category as $key=> $item) 
 <tr>
