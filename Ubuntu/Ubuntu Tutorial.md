@@ -5,5 +5,5 @@
 
 ## How to start xampp manually with terminal
 > 1. Open your terminal with shortcut ```Ctrl+Alt+T```. After that run this command: ```sudo apachectl stop```.
-> 2. Run this comman: ```sudo /opt/lampp/manager-linux-x64.run```.
+> 2. Run this command: ```sudo /opt/lampp/manager-linux-x64.run```.
 > 3. Done. You're good to go.
