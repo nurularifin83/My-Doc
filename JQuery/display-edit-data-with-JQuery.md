@@ -1,4 +1,4 @@
-# Edit data with javascript in Laravel
+# Display edit data with JQuery and Modal Popup
 > 1. Add the following code to your ```routes/web.php```:
 ```
 Route::get('/edit/blog/category/{id}','EditBlogCategory');
