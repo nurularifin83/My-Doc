@@ -15,7 +15,21 @@ public function UserOnline(){
     return Cache::has('user-is-online' . $this->id);
 }
 ```
-> 4. Display your ```last_seen``` in your blade like the following code:
+> 4. Create a controller with this artisan ```php artisan make:controller ActiveUserController```.
+> 5. Add this route to your ```routes/web.php```:
+```
+Route::get('/all/online/user',[ActiveUserController::class,'AllUser']);
+```
+> 6. Add the following code in your ```ActiveUserController``` controller:
+```
+public function AllUser()
+{
+    $users = User::latest()->get();
+    return view('user_all',compact('users'));
+}
+```
+> 7. Make blade file ```resources/views/user_all.blade.php```.
+> 8. Display your ```last_seen``` in your blade like the following code:
 ```
 @foreach ($users as $key => $item) 
 <tr>
