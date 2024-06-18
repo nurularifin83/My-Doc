@@ -30,18 +30,18 @@
 > 2. Put the following CSS to set width for your Datatable:
 ```
 <style type="text/css">
-table#example th:nth-child(4) {
+table#example th:nth-child(3) {
     width: 100%;
-    max-width: 50%;
+    max-width: 80%;
     word-break: break-all;
-    white-space: pre-line;
+    white-space: wrap;
 }
 
-table#example td:nth-child(4){
+table#example td:nth-child(3){
     width: 100%;
-    max-width: 50%;
+    max-width: 80%;
     word-break: break-all;
-    white-space: pre-line;
+    white-space: wrap;
 }
 </style>
 ```
