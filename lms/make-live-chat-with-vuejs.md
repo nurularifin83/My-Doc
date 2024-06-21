@@ -1,4 +1,4 @@
-# Make LIVE CHAT WITH VUEJS
+# Make LIVE CHAT WITH VUEJS + Laravel
 ## _PART I_
 > 1. Install package run this command ```npm install vue@3.2.36 vue-loader@next``` and this ```npm install``` and this ```npm i @vitejs/plugin-vue```.
 > 2. Make sure you successfully install the package with checked in your ```package.json``` and this code available:
