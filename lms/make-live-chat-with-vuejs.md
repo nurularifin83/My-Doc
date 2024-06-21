@@ -5,7 +5,8 @@
 ```
 "dependencies": {
     "vue": "^3.2.20",
-    "vue-loader": "^17.3.1"
+    "vue-loader": "^17.3.1",
+    "@vitejs/plugin-vue": "^5.0.5",
 }
 ```
 > 3. In your ```vite.config.js``` add the following code:
