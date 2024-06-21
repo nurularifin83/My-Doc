@@ -306,7 +306,7 @@ public function LiveChat()
 }
 ```
 
-> 16. DONE. We've done for part one. But we still log way to go. Next we'll make for part-2, in this part we'll make chat box and chat for both side.
+> 16. DONE. We've done for part one. But we still long way to go. Next we'll make for part-2, in this part we'll make chat box and chat for both side.
 
 ## _PART II (for student)_ (In this part you don't to think about route and controller anymore because we've added all of that on the _first part_)
 > 17. Make file in ```resources/js/components/ChatMessage.vue``` and put this code:
