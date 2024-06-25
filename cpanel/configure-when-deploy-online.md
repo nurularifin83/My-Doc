@@ -6,7 +6,8 @@ php artisan config:cache
 php artisan cache:clear
 php artisan view:clear
 ```
-> 2. In your folder ```/public_html/your_folder_domain_name/.htaccess``` add the following code:
+> 2. Upload your project to your cpanel _File Manager_ in this folder ```/public_html/your_folder_domain_name```
+> 3. In your folder ```/public_html/your_folder_domain_name/.htaccess``` add the following code:
 ```
 <IfModule mod_rewrite.c>
     RewriteEngine on
@@ -14,5 +15,5 @@ php artisan view:clear
     RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>
 ```
-FYI: ```Step 2``` only for sub domain. If you use main domain no need todo step 2.
+FYI: ```Step 3``` only for sub domain. If you use main domain no need todo step 2.
 > 3. Done.
