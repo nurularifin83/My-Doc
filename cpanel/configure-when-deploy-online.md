@@ -15,5 +15,5 @@ php artisan view:clear
     RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>
 ```
-FYI: ```Step 3``` only for sub domain. If you use main domain no need todo step 2.
+FYI: ```Step 3``` only for sub domain. If you use main domain no need todo step 3.
 > 3. Done.
