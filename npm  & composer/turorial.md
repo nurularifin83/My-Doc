@@ -7,4 +7,4 @@
 
 # Composer
 > Install package: ```composer require packageName/packageName```
-> Uninstall package: ```composer remove vendor/package```
+> Uninstall package: ```composer remove vendor/package``` xample: ```composer remove doctrine/annotations  ```

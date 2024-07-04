@@ -1,0 +1,1 @@
+Publish paginate: php artisan livewire:publish --pagination
