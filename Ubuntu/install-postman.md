@@ -1,10 +1,14 @@
 # How to Installing Postman on Ubuntu
 
 > 1. If any version of postman is installed we need to remove it
-```sudo rm -rf /opt/Postman```
+```
+sudo rm -rf /opt/Postman
+```
 
 > 2. This will install postman to /tmp directory and move it to /opt/ directory.
-```tar -C /tmp/ -xzf <(curl -L https://dl.pstmn.io/download/latest/linux64) && sudo mv /tmp/Postman /opt/```
+```
+tar -C /tmp/ -xzf <(curl -L https://dl.pstmn.io/download/latest/linux64) && sudo mv /tmp/Postman /opt/
+```
 
 > 3. Create a desktop file
 ```
