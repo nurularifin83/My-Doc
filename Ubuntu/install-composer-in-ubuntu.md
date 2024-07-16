@@ -49,8 +49,8 @@ composer
 ```
 
 > [!IMPORTANT]
-Note: If you prefer to have separate Composer executables for each project you host on this server, you can install it locally, on a per-project basis. This method is also useful when your system user doesn’t have permission to install software system-wide.
-To do this, use the command php /tmp/composer-setup.php. This will generate a composer.phar file in your current directory, which can be executed with php composer.phar.
+Note: If you prefer to have separate Composer executables for each project you host on this server, you can install it locally, on a per-project basis. This method is also useful when your system user doesn’t have permission to install software system-wide. 
+To do this, use the command ```php /tmp/composer-setup.php```. This will generate a ```composer.phar``` file in your current directory, which can be executed with php ```composer.phar```.
 
 for mote please visit [this link.](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-22-04)
 
