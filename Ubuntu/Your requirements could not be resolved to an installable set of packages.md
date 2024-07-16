@@ -34,4 +34,5 @@ You can also run `php --ini` in a terminal to see which files are used by PHP in
 Alternatively, you can run Composer with `--ignore-platform-req=ext-xml --ignore-platform-req=ext-dom` to temporarily ignore these required extensions.
 ```
 ## Then run this command:
-First installed ```sudo apt-get install php8.2-gd```, then ```sudo apt-get install php8.2-intl``` and last one was ```sudo apt-get install php8.2-xsl```. After that, it's installing as it should.
+> First installed ```sudo apt-get install php8.2-gd```, then ```sudo apt-get install php8.2-intl``` and last one was ```sudo apt-get install php8.2-xsl```.After that, it's installing as it should.
+> If the above command did not work run the following command: ```sudo apt-get install php8.2-zip```
