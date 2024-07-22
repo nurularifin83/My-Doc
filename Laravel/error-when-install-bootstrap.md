@@ -1,4 +1,4 @@
-# Erro when install Bootstrap 5 in laravel 11 it's say 
+# Error when install Bootstrap 5 in laravel 11, it's say 
 ```node_modules/bootstrap/scss/_type.scss
 38  │       font-family: $display-font-family;
     │       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ declaration
