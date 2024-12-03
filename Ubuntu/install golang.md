@@ -12,5 +12,6 @@ b. sudo tar -C /usr/local -xzf go1.23.3.linux-amd64.tar.gz
 export PATH="$PATH:/usr/local/go/bin"
 ```
 then ```Ctrl+0 + Ctrl+X```
+
 7. Done
 8. Verify that you've installed go ```go version```
