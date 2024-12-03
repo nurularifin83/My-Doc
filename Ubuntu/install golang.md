@@ -1,4 +1,4 @@
-1. Download golang
+1. Download [golang](https://go.dev/doc/install)
 2. In Terminal directory Download:  
 ```
 a. sudo rm -rf /usr/local/go
