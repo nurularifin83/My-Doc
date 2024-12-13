@@ -10,3 +10,6 @@
 > 7. One more thing is to set environment variable path. Go to home folder ```cd```
 > 8. Type ```open .bashrc``` and then press Enter
 > 9. Go to very button on those file and type this ```export PATH=$PATH:/opt/jmeter/bin``` after that save the file
+> 10. After that reload your file with the following command ```source .bashrc``` and then press enter (make sure to type this in the home folder)
+> 11. To launch JMETER just type ```jmeter``` on the terminal
+> 12. Done
