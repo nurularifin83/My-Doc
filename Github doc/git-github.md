@@ -18,4 +18,6 @@
 >
 > ``git add nameOfFile`` _Add specific file_
 >
-> ``git checkout`` _roll back to the last position_
+> ``git checkout nameOfFile`` _roll back to the last position_
+>
+> ``git diff nameOfFile`` _Looking history of file we've edited_
