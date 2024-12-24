@@ -13,3 +13,9 @@
 > ``git status`` _looking for status comment like commit_
 >
 > ``git log`` _looking for previous commit make it_
+>
+> ``git add .`` _Add file and everything in once_
+>
+> ``git add nameOfFile`` _Add specific file_
+>
+> ``git checkout`` _roll back to the last position_
