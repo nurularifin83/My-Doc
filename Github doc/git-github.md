@@ -21,3 +21,5 @@
 > ``git checkout nameOfFile`` _roll back to the last position_
 >
 > ``git diff nameOfFile`` _Looking history of file we've edited_
+>
+> [.gitignore guide](https://github.com/github/gitignore)
