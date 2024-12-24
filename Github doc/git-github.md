@@ -22,4 +22,8 @@
 >
 > ``git diff nameOfFile`` _Looking history of file we've edited_
 >
+> ``pwd`` _Looking where you are right now_
+>
+> ``cd ..`` _exit from folder_
+>
 > [.gitignore guide](https://github.com/github/gitignore)
