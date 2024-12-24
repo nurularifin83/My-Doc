@@ -1,9 +1,11 @@
 > [!IMPORTANT]
 > ## For Basic writing and formatting syntax [Visit this link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-## We recommend every repository include a _README_, _LICENSE_, and _.gitignore_.
-
-## …or create a new repository on the command line
+# How to host your project on github
+> [!NOTE]
+> We recommend every repository include a _README_, _LICENSE_, and _.gitignore_.
+## 1. Make repository 
+## 2. Look for the command line
 ```
 echo "# Your project name or other shit" >> README.md
 git init
