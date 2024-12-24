@@ -10,4 +10,6 @@
 >
 >  ``ls -a`` _Looking for hidden file_
 >
-> 
+> ``git status`` _looking for status comment like commit_
+>
+> ``git log`` _looking for previous commit make it_
