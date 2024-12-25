@@ -26,6 +26,6 @@
 >
 > ``cd ..`` _exit from folder_
 >
-> ``git rm --cached -r .`` _Remove everything we've added using ``git add .``
+> ``git rm --cached -r .`` _Remove everything we've added using ``git add .``_
 >
 > [.gitignore guide](https://github.com/github/gitignore)
