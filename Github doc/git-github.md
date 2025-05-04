@@ -28,4 +28,6 @@
 >
 > ``git rm --cached -r .`` _Remove everything we've added using ``git add .``_
 >
+> ``touch`` _To create a new file_
+>
 > [.gitignore guide](https://github.com/github/gitignore)
