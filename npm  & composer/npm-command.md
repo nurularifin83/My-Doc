@@ -7,4 +7,6 @@
     "start-server": "node app.js"
 }
 ```
+> ``Ctrl + C`` Exid command promd running
 > 
+> ``nodemon package`` is for auto update server without exit and re run.
