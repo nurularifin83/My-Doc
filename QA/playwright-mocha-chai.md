@@ -50,16 +50,27 @@ Write your code in ``tests/mentoring.spec.js``.
 Edit your ``package.json`` file to add a test script:
 ```
 {
-  "name": "dealls-qa-test",
+  "name": "your project name",
   "version": "1.0.0",
-  "description": "UI automation test for Dealls mentoring feature using Playwright + Mocha",
+  "description": "your description",
+  "main": "index.js",
   "scripts": {
-    "test": "mocha tests/*.spec.js --timeout=60000"
+    "test": "mocha tests/*.spec.js --reporter mochawesome --timeout=60000"
   },
+  "keywords": [
+    "QA",
+    "Automation",
+    "test",
+    "Playwright",
+    "mocha"
+  ],
+  "author": "Your name",
+  "license": "ISC",
   "devDependencies": {
-    "chai": "^4.3.7",
-    "mocha": "^10.2.0",
-    "playwright": "^1.44.0"
+    "chai": "^5.2.0",
+    "mocha": "^11.5.0",
+    "mochawesome": "^7.1.3",
+    "playwright": "^1.52.0"
   }
 }
 ```
