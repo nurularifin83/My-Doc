@@ -6,7 +6,9 @@ cd  your-folder-name
 ```
 
 # 2. Initialize Node.js Project
-```npm init -y```
+```
+npm init -y
+```
 
 This will generate a ``package.json`` file.
 
@@ -16,7 +18,14 @@ We’ll install:
 * Mocha (test framework)
 * Chai (assertion library)
   
-```npm install playwright mocha chai --save-dev```
+```
+npm install playwright mocha chai --save-dev
+```
+
+and also install the report
+```
+npm install --save-dev mochawesome
+```
 
 # 4. Create Folder Structure
 ```
