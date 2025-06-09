@@ -81,4 +81,49 @@ npm test
 ```
 If everything is set correctly, Playwright will launch a browser and run the mentoring test scenarios.
 
-#  8. Done
+#  ===================================================== #
+## GitHub Actions (CI)
+This repository is integrated with GitHub Actions. On every push or pull request to ``main`` branch, all tests will run automatically.
+
+See ``.github/workflows/node.js.yml`` for configuration.
+
+```
+name: Playwright Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install browser dependencies (Playwright)
+        run: npx playwright install-deps
+
+      - name: Install browsers
+        run: npx playwright install
+
+      - name: Run tests
+        run: npx mocha tests/*.spec.js --reporter mochawesome --timeout=60000
+
+      - name: Upload mochawesome report
+        uses: actions/upload-artifact@v4
+        with:
+          name: mochawesome-report
+          path: mochawesome-report
+```
